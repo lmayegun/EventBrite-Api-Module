@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - eventbrite_api
+  module:
+    - node
+name: Event
+type: event
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1

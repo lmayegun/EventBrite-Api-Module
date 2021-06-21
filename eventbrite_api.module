@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Eventbrite Api module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function eventbrite_api_theme($existing, $type, $theme, $path) {
+  return [
+    'event_template' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
+}

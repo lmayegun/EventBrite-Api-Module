@@ -1,0 +1,29 @@
+{% set randomImg = [
+  "https://btn.ninja/images/stock/kaboompics.com_golden_cup.jpg",
+   "https://btn.ninja/images/stock/RTRCZHW8HI.jpg",
+   ] 
+%}
+<div class="slideshow containerSlideshow">
+
+  <div class="events">
+
+    {% for key, value in test_var %}
+
+      {% if key == 0 %}
+        <div class="slide isSlide active">
+      {% else %}
+        <div class="slide isSlide">
+      {% endif %}
+          <div class="event-details" style="background-image: url({{ random( randomImg) }});">
+            <h1> {{ value.title }} </h1>
+            <p> {{ value.description }} </p>
+            <strong> {{ value.location }} </strong>
+            <h2> {{ value.date }} </h2>
+          </div>
+        </div>
+    {% endfor %}    
+  </div><!--end events-->
+
+<button type="button" class="btnPrevSlide collapse">Prev</button>
+<button type="button" class="btnNextSlide collapse">Next</button>
+</div><!--end slideshow-->

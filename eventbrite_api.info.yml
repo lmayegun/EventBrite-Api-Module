@@ -1,0 +1,5 @@
+name: Eventbrite Api
+type: module
+description: Create content by pulling in data from eventbrite rest endpoint
+package: Custom
+core: 8.x

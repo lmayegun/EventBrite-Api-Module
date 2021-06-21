@@ -1,0 +1,5 @@
+services:
+  eventbrite_custom_commands.commands:
+    class: Drupal\eventbrite_api\Commands\EventBriteCommands
+    tags:
+      - { name: drush.command }
